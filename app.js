@@ -1,5 +1,5 @@
 'use strict';
-const STATUS=[['registered','تسجيل'],['collected','تم السحب'],['in_lab','في المعمل'],['pending_review','في انتظار المراجعة'],['approved','معتمد'],['delivered','تم التسليم']];
+const STATUS=[['registered','مسجّل'],['collected','تم السحب'],['in_lab','قيد الفحص'],['pending_review','بانتظار الاعتماد'],['approved','معتمد طبياً'],['delivered','مُسلّم']];
 const KEYS=['kind','version','day','timezone','exportedAt','visits','statuses','receipts','expenses','netMovement','undatedPaymentVisits','invalidEntries'];
 const OPT=['fictional'];
 const DB='nile-summary',ST='summaries';
