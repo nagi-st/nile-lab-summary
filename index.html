@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#18385b">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<title>ملخص معمل النيل</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f3f4f6;color:#111827;line-height:1.5}
+header{background:#18385b;color:#fff;padding:14px 16px}header h1{margin:0;font-size:18px}header small{opacity:.85}
+main{padding:12px;max-width:560px;margin:auto}
+.card{background:#fff;border-radius:12px;padding:14px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.card h2{margin:0 0 8px;font-size:16px}
+.big{font-size:34px;font-weight:700;color:#18385b}
+.row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #e5e7eb}.row:last-child{border:0}
+.warn{background:#fff7ed;border:1px solid #d97706;border-radius:10px;padding:10px;font-size:13px;margin-bottom:12px}
+.stale{background:#fee2e2;border-color:#dc2626}
+.demo{background:#ede9fe;border:1px solid #7c3aed}
+button,label.btn{display:block;width:100%;background:#18385b;color:#fff;border:0;border-radius:10px;padding:14px;font-size:16px;text-align:center;margin-bottom:8px;font-family:inherit}
+button.sec{background:#e5e7eb;color:#111827}
+input[type=file]{display:none}
+.small{font-size:12px;color:#4b5563}
+.money{font-size:22px;font-weight:700}
+.hist button{background:#fff;color:#111827;border:1px solid #d1d5db;padding:10px;text-align:right;margin-bottom:6px;font-size:14px}
+.hist button.on{border-color:#18385b;background:#eef4fb}
+</style>
+</head>
+<body>
+<header><h1>ملخص معمل النيل</h1><small>لقطة يدوية، مش متابعة مباشرة</small></header>
+<main>
+<div id="msg"></div>
+<div id="view"></div>
+<label class="btn" for="f">استيراد ملف ملخّص</label>
+<input id="f" type="file" accept=".json,application/json">
+<div class="card hist" id="hist"></div>
+<button class="sec" id="demo">عرض بيانات وهمية للتجربة</button>
+<button class="sec" id="clear">مسح كل الملخصات من الموبايل</button>
+<p class="small">الأرقام هنا إجمالية بس، من غير أسماء أو أكواد أو نتائج مرضى. الملفات المستوردة بتتخزن على الموبايل ده فقط ومش بتتبعت لأي سيرفر. صافي الحركة = المحصّل ناقص المصروفات، مش ربح ومش رصيد الخزينة.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
